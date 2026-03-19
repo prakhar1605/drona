@@ -285,8 +285,8 @@ if st.session_state.page == "setup":
     col1, col2 = st.columns([2, 1], gap="large")
 
     with col1:
-        st.subheader("📄 Upload Resume (Optional)")
-        uploaded = st.file_uploader("Drop your PDF resume", type=["pdf"], label_visibility="collapsed")
+        st.subheader("📄 Upload Document ")
+        uploaded = st.file_uploader("Drop your PDF Document", type=["pdf"], label_visibility="collapsed")
         if uploaded:
             st.success(f"✅ Loaded: {uploaded.name}")
 
